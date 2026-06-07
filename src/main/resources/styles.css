@@ -1,0 +1,307 @@
+/*
+   Тема оформления приложения
+ */
+
+.root {
+    -fx-font-family: "Segoe UI", "Inter", "Roboto", sans-serif;
+    -fx-font-size: 13px;
+    -fx-background-color: #f4f5fb;
+    /* Палитра */
+    accent: #6c5ce7;
+    accent-dark: #5546d6;
+    text-dark: #2d2d44;
+    text-muted: #8a8aa3;
+    danger: #e74c6c;
+    success: #1abc9c;
+}
+
+/* ---------- Заголовки ---------- */
+.title {
+    -fx-font-size: 26px;
+    -fx-font-weight: bold;
+    -fx-text-fill: text-dark;
+}
+
+.subtitle {
+    -fx-font-size: 14px;
+    -fx-text-fill: text-muted;
+}
+
+.section-title {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-text-fill: text-dark;
+}
+
+/* ---------- Карточка (панель) ---------- */
+.card {
+    -fx-background-color: white;
+    -fx-background-radius: 16;
+    -fx-padding: 28;
+    -fx-effect: dropshadow(gaussian, rgba(60, 50, 120, 0.12), 24, 0, 0, 8);
+}
+
+.field-label {
+    -fx-text-fill: text-muted;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+}
+
+/* ---------- Поля ввода ---------- */
+.text-field, .password-field, .combo-box, .date-picker, .text-area {
+    -fx-background-color: #f1f2f9;
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-border-color: transparent;
+    -fx-border-width: 1.5;
+    -fx-padding: 10 14 10 14;
+    -fx-prompt-text-fill: #b0b0c4;
+    -fx-text-fill: text-dark;
+}
+
+.text-field:focused, .password-field:focused, .combo-box:focused,
+.date-picker:focused, .text-area:focused {
+    -fx-background-color: white;
+    -fx-border-color: accent;
+}
+
+/* ---------- Кнопки ---------- */
+.button {
+    -fx-background-color: #e9eaf5;
+    -fx-text-fill: text-dark;
+    -fx-font-weight: bold;
+    -fx-background-radius: 10;
+    -fx-padding: 10 20 10 20;
+    -fx-cursor: hand;
+}
+
+.button:hover {
+    -fx-background-color: #dcdef0;
+}
+
+/* Главная (акцентная) кнопка */
+.button-primary {
+    -fx-background-color: accent;
+    -fx-text-fill: white;
+}
+
+.button-primary:hover {
+    -fx-background-color: accent-dark;
+}
+
+/* Опасная кнопка (отмена/удаление) */
+.button-danger {
+    -fx-background-color: #fbe2e8;
+    -fx-text-fill: danger;
+}
+
+.button-danger:hover {
+    -fx-background-color: #f8d0da;
+}
+
+/* Ссылка-кнопка */
+.link-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: accent;
+    -fx-underline: false;
+    -fx-padding: 4 0 4 0;
+}
+
+.link-button:hover {
+    -fx-text-fill: accent-dark;
+    -fx-underline: true;
+}
+
+/* ---------- Вкладки ---------- */
+.tab-pane .tab-header-area .tab-header-background {
+    -fx-background-color: transparent;
+}
+
+.tab-pane {
+    -fx-tab-min-height: 38;
+    -fx-tab-max-height: 38;
+}
+
+.tab-pane .tab {
+    -fx-background-color: transparent;
+    -fx-background-radius: 10 10 0 0;
+    -fx-padding: 6 16 6 16;
+}
+
+.tab-pane .tab:selected {
+    -fx-background-color: white;
+}
+
+.tab-pane .tab .tab-label {
+    -fx-text-fill: text-muted;
+    -fx-font-weight: bold;
+}
+
+.tab-pane .tab:selected .tab-label {
+    -fx-text-fill: accent;
+}
+
+.tab-pane .tab:selected .focus-indicator {
+    -fx-border-color: transparent;
+}
+
+/* ---------- Таблицы ---------- */
+.table-view {
+    -fx-background-color: white;
+    -fx-background-radius: 12;
+    -fx-border-radius: 12;
+    -fx-border-color: #e7e8f2;
+    -fx-border-width: 1;
+    -fx-padding: 4;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: transparent;
+    -fx-background-radius: 12 12 0 0;
+}
+
+.table-view .column-header {
+    -fx-background-color: transparent;
+    -fx-padding: 10 6 10 6;
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: text-muted;
+    -fx-font-weight: bold;
+    -fx-alignment: center-left;
+}
+
+.table-view .table-cell {
+    -fx-text-fill: text-dark;
+    -fx-padding: 10 8 10 8;
+    -fx-border-color: transparent;
+}
+
+.table-row-cell {
+    -fx-background-color: white;
+    -fx-border-color: #f0f1f8;
+    -fx-border-width: 0 0 1 0;
+}
+
+.table-row-cell:odd {
+    -fx-background-color: #fafbff;
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #ece9fb;
+    -fx-text-fill: text-dark;
+}
+
+.table-row-cell:selected .table-cell {
+    -fx-text-fill: text-dark;
+}
+
+/* ---------- Прочее ---------- */
+.badge-active {
+    -fx-background-color: #e3f8f3;
+    -fx-text-fill: success;
+    -fx-background-radius: 8;
+    -fx-padding: 3 10 3 10;
+    -fx-font-weight: bold;
+}
+
+.badge-cancelled {
+    -fx-background-color: #fbe2e8;
+    -fx-text-fill: danger;
+    -fx-background-radius: 8;
+    -fx-padding: 3 10 3 10;
+    -fx-font-weight: bold;
+}
+
+.list-view {
+    -fx-background-color: #f1f2f9;
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+}
+
+.list-cell {
+    -fx-background-color: transparent;
+    -fx-padding: 8 12 8 12;
+    -fx-text-fill: text-dark;
+}
+
+.list-cell:filled:selected {
+    -fx-background-color: #ece9fb;
+    -fx-text-fill: accent-dark;
+}
+
+.price-label {
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+    -fx-text-fill: accent;
+}
+
+.sidebar {
+    -fx-background-color: linear-gradient(to bottom, #6c5ce7, #5546d6);
+}
+
+.sidebar-title {
+    -fx-text-fill: white;
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+}
+
+.sidebar-text {
+    -fx-text-fill: rgba(255,255,255,0.85);
+    -fx-font-size: 13px;
+}
+
+.hint {
+    -fx-text-fill: text-muted;
+    -fx-font-size: 12px;
+}
+
+/* ---------- Главное меню ---------- */
+.stat-card {
+    -fx-background-color: white;
+    -fx-background-radius: 14;
+    -fx-padding: 16 20 16 20;
+    -fx-effect: dropshadow(gaussian, rgba(60, 50, 120, 0.08), 16, 0, 0, 4);
+}
+
+.stat-value {
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+    -fx-text-fill: accent;
+}
+
+.stat-caption {
+    -fx-font-size: 12px;
+    -fx-text-fill: text-muted;
+}
+
+.menu-card {
+    -fx-background-color: white;
+    -fx-background-radius: 16;
+    -fx-padding: 20;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(60, 50, 120, 0.10), 18, 0, 0, 6);
+    -fx-border-color: transparent;
+    -fx-border-width: 2;
+    -fx-border-radius: 16;
+}
+
+.menu-card:hover {
+    -fx-border-color: accent;
+    -fx-effect: dropshadow(gaussian, rgba(108, 92, 231, 0.22), 22, 0, 0, 8);
+}
+
+.menu-card-icon {
+    -fx-font-size: 28px;
+}
+
+.menu-card-title {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: text-dark;
+}
+
+.menu-card-desc {
+    -fx-font-size: 12px;
+    -fx-text-fill: text-muted;
+}
